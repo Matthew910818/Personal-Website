@@ -3,34 +3,25 @@
   <head>
     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
 
-    <title>MAO CHI HE</title>
+    <title>MAO-CHI HE</title>
 
     <meta name="author" content="MAO CHI HE">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="shortcut icon" href="images/favicon/favicon.ico" type="image/x-icon">
     <link rel="stylesheet" type="text/css" href="stylesheet.css">
     <link rel="newstyle" href="website.css">
-    <script>
-      (function () {
-        var theme;
-
-        try {
-          theme = localStorage.getItem('preferred-theme');
-        } catch (error) {
-          theme = null;
-        }
-
-        if (!theme) {
-          theme = window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light';
-        }
-
-        document.documentElement.setAttribute('data-theme', theme);
-      }());
-    </script>
+    <script src="site-theme.js"></script>
     
   </head>
 
-  <body>
+  <body class="home-page">
+    <nav class="section-nav" aria-label="Page sections">
+      <a href="#education">Education</a>
+      <a href="#experience">Experience</a>
+      <a href="#publications">Publications</a>
+      <a href="#projects">Projects</a>
+      <a href="beyond-academics.html">Beyond Academics</a>
+    </nav>
     <button class="theme-toggle" type="button" aria-label="Switch to dark mode" aria-pressed="false">
       <svg class="sun-icon" viewBox="0 0 24 24" aria-hidden="true">
         <circle cx="12" cy="12" r="4" fill="none" stroke="currentColor" stroke-width="2"></circle>
@@ -40,30 +31,42 @@
         <path d="M20.5 14.5A8.5 8.5 0 0 1 9.5 3.5 8.5 8.5 0 1 0 20.5 14.5Z" fill="none" stroke="currentColor" stroke-linejoin="round" stroke-width="2"></path>
       </svg>
     </button>
-    <table class="page-shell" style="width:100%;max-width:800px;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
+    <table class="page-shell" style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
       <tr style="padding:0px">
         <td style="padding:0px">
           <table class="intro-section" style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
             <tr style="padding:0px">
               <td class="intro-copy" style="padding:2.5%;width:63%;vertical-align:middle">
                 <p class="name">
-                  MAO CHI HE (Matthew)
+                  <a class="site-title" href="index.html">👋🏻 MAO-CHI HE (Matthew)</a>
                 </p>
                 <p class="intro-text">
-                  Hi, I’m Mao-Chi He, a graduate of the Interdisciplinary Program of Engineering at National Tsing Hua University, where I studied both Mechanical Engineering and Computer Science. During my senior year, I joined the University of California, Berkeley as an exchange student in the Department of Computer Science, further strengthening my background in AI, software development, and computational thinking.
+                  I am currently a Research Assistant at the Institute of Information Science, Academia Sinica, where I focus on computer vision, robotics, and event-based tactile perception for robotic manipulation.
                 </p>
                 <p class="intro-text">
-                  I have always been fascinated by robotics and artificial intelligence, especially their potential to solve real-world problems and improve people’s daily lives. Through my internship and research experiences, I have gained hands-on experience in implementing the latest AI technologies and applying them to practical robotic systems. These experiences have also helped me identify meaningful challenges in the robotics field and motivated me to develop solutions that bridge AI, software, and physical systems.
+                  I received my B.S. in Interdisciplinary Program of Engineering from National Tsing Hua University, specializing in Computer Science and Mechanical Engineering. During my undergraduate studies, I also spent two semesters as a Computer Science exchange student at the University of California, Berkeley.
+                </p>
+                <p class="intro-text">
+                  My research interests lie in computer vision, multimodal representation learning, and embodied AI. I am interested in developing intelligent perception systems that enable robots to better understand and interact with the physical world. My long-term goal is to translate advances in AI research into practical technologies that can make a meaningful difference in people's daily lives.
                 </p>
                 <p class="profile-links" style="text-align:center">
                   <a href="mailto:matthew910818@gmail.com">Email</a> &nbsp;/&nbsp;
-                  <a href="data/CV(Matthew).pdf">CV</a> &nbsp;/&nbsp;
+                  <a href="data/Application%20Resume.pdf">CV</a> &nbsp;/&nbsp;
                   <a href="https://github.com/Matthew910818">Github</a> &nbsp;/&nbsp;
                   <a href="https://www.linkedin.com/in/mao-chi-he">LinkedIn</a>
                 </p>
               </td>
               <td class="profile-cell" style="padding:2.5%;width:37%;max-width:37%">
                 <a href="images/Matthew.jpg"><img class="profile-photo hoverZoomLink" alt="profile photo" src="images/Matthew.jpg"></a>
+                <a class="beyond-preview" href="beyond-academics.html">
+                  <svg class="beyond-pointer" viewBox="0 0 32 32" aria-hidden="true" focusable="false">
+                    <path d="M16 27V5M6 15 16 5l10 10"></path>
+                  </svg>
+                  <small class="beyond-click-label">Click me</small>
+                  <h2>Beyond Academics</h2>
+                  <p>Volunteer work, activities, and military service</p>
+                  <span>Explore</span>
+                </a>
               </td>
             </tr>
           </tbody></table>
@@ -71,41 +74,34 @@
           <table class="section-heading" style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
             <tr>
               <td style="padding:20px;width:100%;vertical-align:middle">
-                <h2>Education</h2>
+                <h2 id="education">Education</h2>
               </td>
             </tr>
           </tbody></table>
           <table class="section-list" style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
-            <tr class="entry-row">
-              <td class="entry-logo" style="padding:16px;width:20%;vertical-align:middle">
-                <img src='images/Berkeley.png' alt="UC Berkeley Logo">
-              </td>
-              <td class="entry-content" style="padding:8px;width:80%;vertical-align:middle">
-                <div class="entry-header">
-                  <strong>University of California, Berkeley</strong>
-                  <em>Aug 2024 - May 2025</em>
-                </div>
-                <br>
-                <em>Exchange Student, Computer Science Department</em>
-                <ul>
-                  <li>Location: Berkeley, CA</li>
-                </ul>
-              </td>
-            </tr>
-            <tr class="entry-row">
+            <tr class="entry-row education-row">
               <td class="entry-logo" style="padding:16px;width:20%;vertical-align:middle">
                 <img src='images/NTHU.png' alt="NTHU Logo">
               </td>
               <td class="entry-content" style="padding:8px;width:80%;vertical-align:middle">
-                <div class="entry-header">
-                  <strong>National Tsing Hua University (Taiwan)</strong>
-                  <em>Aug 2021 - May 2024</em>
+                <div class="education-degree">
+                  <div class="entry-header">
+                    <strong>National Tsing Hua University</strong>
+                    <em>Sep 2021 – Dec 2025</em>
+                  </div>
+                  <p>B.S., Interdisciplinary Program of Engineering<br>
+                    (Computer Science + Mechanical Engineering)</p>
                 </div>
-                <br>
-                <em>B.S., Interdisciplinary Program of Engineering (CS + MechE)</em>
-                <ul>
-                  <li>Location: Hsinchu, Taiwan</li>
-                </ul>
+                <div class="education-exchange">
+                  <img src="images/Berkeley.png" alt="UC Berkeley Logo">
+                  <div class="exchange-details">
+                    <div class="entry-header">
+                      <strong>University of California, Berkeley</strong>
+                      <em>Fall 2024 – Spring 2025</em>
+                    </div>
+                    <p>Computer Science Exchange Student</p>
+                  </div>
+                </div>
               </td>
             </tr>
           </tbody></table>
@@ -113,87 +109,70 @@
           <table class="section-heading" style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
             <tr>
               <td style="padding:20px;width:100%;vertical-align:middle">
-                <h2>Experience</h2>
+                <h2 id="experience">Experience</h2>
               </td>
             </tr>
           </tbody></table>
           <table class="section-list" style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
             <tr class="entry-row">
-              <td class="entry-logo" style="padding:16px;width:20%;vertical-align:middle">
-                <img src='images/Microsoft.png' alt="Microsoft Logo">
-              </td>
-              <td class="entry-content" style="padding:8px;width:80%;vertical-align:middle">
-                <div class="entry-header">
-                  <strong>Microsoft</strong>
-                  <em>Sep 2025 - Mar 2026</em>
-                </div>
-                <br>
-                <em>Research & Development Intern @ MAI-A Ads</em>
-                <br>
-                <em>Taipei, Taiwan</em>
-                <ul>
-                  <li>Architected and developed RecapRon, an AI-powered meeting recap platform that converts long recordings into concise highlight videos (~10% of original length).</li>
-                  <li>Engineered LLM pipelines for transcript segmentation, summarization, and script generation, improving output coherence and downstream reliability.</li>
-                  <li>Designed reusable agent-native workflow modules with Claude Code Skills to decompose complex AI tasks into scalable components.</li>
-                </ul>
-              </td>
-            </tr>
-            <tr class="entry-row">
-              <td class="entry-logo" style="padding:16px;width:20%;vertical-align:middle">
+              <td class="entry-logo sinica-media" style="padding:16px;width:20%;vertical-align:middle">
                 <img src='images/Sinica.png' alt="Academia Sinica Logo">
               </td>
               <td class="entry-content" style="padding:8px;width:80%;vertical-align:middle">
-                <div class="entry-header">
-                  <strong>Institute of Information Science, Academia Sinica</strong>
-                  <em>Jul 2025 - Mar 2026</em>
-                </div>
-                <br>
-                <em>Research Assistant</em>
-                <br>
-                <em>Taipei, Taiwan</em>
-                <ul>
-                  <li>Developed an event-based optical tactile sensing framework for robotic manipulation with real-time contact, compliance, and slip perception at 1500 FPS.</li>
-                  <li>Proposed a self-supervised spatio-temporal pretraining method for tactile data to improve representation learning and generalization across downstream tasks.</li>
-                  <li>Built a real-time multimodal robotics pipeline by integrating the tactile sensor, gripper, robot arm, and VLA model through ROS2.</li>
-                </ul>
+                <h3 class="experience-title">Institute of Information Science, Academia Sinica</h3>
+                <p class="experience-role"><strong>Research Assistant | Computer Vision &amp; Machine Learning Lab</strong></p>
+                <p class="experience-dates"><em>July 2025 – Present</em></p>
+                <p class="experience-description">My research focuses on event-based optical tactile perception for robotic manipulation. I have developed a high-frequency tactile sensing framework that uses event cameras to capture surface deformation and recognize physical interactions, such as object compliance and slippage. Currently, I am exploring representation learning and tactile dynamics prediction to help robots anticipate future contact states. My goal is to integrate these learned representations into Vision-Language-Action (VLA) models, enabling robots to respond and adapt more efficiently during manipulation tasks.</p>
               </td>
             </tr>
             <tr class="entry-row">
-              <td class="entry-logo" style="padding:16px;width:20%;vertical-align:middle">
-                <img src='images/NTHU.png' alt="NTHU Logo">
+              <td class="entry-logo microsoft-media" style="padding:16px;width:20%;vertical-align:middle">
+                <img src="images/Microsoft.png" alt="Microsoft AI">
               </td>
               <td class="entry-content" style="padding:8px;width:80%;vertical-align:middle">
-                <div class="entry-header">
-                  <strong>CVLab, National Tsing Hua University</strong>
-                  <em>Jan 2025 - Dec 2025</em>
-                </div>
-                <br>
-                <em>Undergrad Research Assistant</em>
-                <br>
-                <em>Hsinchu, Taiwan</em>
-                <ul>
-                  <li>Applied 3D Gaussian Splatting to real-time rendering and 3D scene reconstruction, improving simulation efficiency and geometric fidelity.</li>
-                  <li>Constructed digital twin models from sparse-view inputs (e.g., 4 images) for real-world scene simulation.</li>
-                </ul>
+                <h3 class="experience-title">Microsoft AI (MAI)</h3>
+                <p class="experience-role"><strong>Research &amp; Development Intern</strong></p>
+                <p class="experience-dates"><em>September 2025 – March 2026</em></p>
+                <p class="experience-description">During my internship at Microsoft AI, I worked on RecapRon, an AI-powered platform that transforms lengthy meeting recordings into concise highlight videos approximately 10% of their original duration. I developed LLM-based workflows for transcript processing, summarization, and script generation, incorporating Segment any Text (SaT) to improve sentence segmentation. I also explored OCR-based slide transition detection to better synchronize presentation content with spoken discussions. This experience gave me the opportunity to work on an end-to-end AI application and understand the engineering challenges of balancing processing efficiency, scalability, and output quality.</p>
               </td>
             </tr>
             <tr class="entry-row">
-              <td class="entry-logo" style="padding:16px;width:20%;vertical-align:middle">
-                <img src='images/NTHU.png' alt="NTHU Logo">
+              <td class="entry-logo vision-video" style="padding:16px;width:20%;vertical-align:middle">
+                <div class="vision-media">
+                <img class="vision-preview" src="images/diffusion-preview.webp" width="480" height="270" alt="Animated Computer Vision Lab digital twin demonstration">
+                <video autoplay loop muted playsinline preload="auto" aria-label="Computer Vision Lab digital twin demonstration">
+                  <source src="images/diffusion.mp4" type="video/mp4">
+                  <a href="images/diffusion.mp4">Watch the Computer Vision Lab demonstration</a>
+                </video>
+                </div>
               </td>
               <td class="entry-content" style="padding:8px;width:80%;vertical-align:middle">
-                <div class="entry-header">
-                  <strong>CNELAB, National Tsing Hua University</strong>
-                  <em>Aug 2023 - Dec 2024</em>
+                <h3 class="experience-title">Computer Vision Lab, National Tsing Hua University</h3>
+                <p class="experience-role"><strong>Undergraduate Research Assistant</strong></p>
+                <p class="experience-dates"><em>January 2025 – December 2025</em></p>
+                <p class="experience-description">I worked on a Digital Twin project that explored how to reconstruct realistic 3D environments from a limited number of images. Our goal was to recreate a classroom environment using only four uncalibrated images and integrate it into NVIDIA Omniverse for simulation. I experimented with methods including ViewCrafter, VGGT, and 3D Gaussian Splatting to address challenges in novel-view synthesis, camera estimation, and scene reconstruction. This project introduced me to the challenges of translating computer vision research into practical applications for embodied AI.</p>
+              </td>
+            </tr>
+            <tr class="entry-row">
+              <td class="entry-logo cnelab-media" style="padding:16px;width:20%;vertical-align:middle">
+                <div class="photo-carousel" role="region" aria-label="CNELAB research photos" aria-roledescription="carousel">
+                  <div class="photo-track" id="cnelab-photos" tabindex="0" aria-label="Research photos; use left and right arrow keys to switch">
+                    <img src="images/CNELAB2.png" alt="CNELAB research photo 1" draggable="false">
+                    <img src="images/CNELAB.png" alt="CNELAB research photo 2" loading="lazy" draggable="false">
+                  </div>
+                  <button class="photo-nav photo-prev" type="button" aria-label="Previous photo" aria-controls="cnelab-photos">
+                    <svg viewBox="0 0 24 24" aria-hidden="true"><path d="m14 6-6 6 6 6"></path></svg>
+                  </button>
+                  <button class="photo-nav photo-next" type="button" aria-label="Next photo" aria-controls="cnelab-photos">
+                    <svg viewBox="0 0 24 24" aria-hidden="true"><path d="m10 6 6 6-6 6"></path></svg>
+                  </button>
                 </div>
-                <br>
-                <em>Undergrad Research Assistant</em>
-                <br>
-                <em>Hsinchu, Taiwan</em>
-                <ul>
-                  <li>Designed and programmed a frequency flashing device using Arduino UNO R3 with a 9-LED array for SSVEP experiments.</li>
-                  <li>Collected 32-channel EEG signals and applied signal processing and machine learning methods, including CNN, CCA, SVM, and Random Forest.</li>
-                </ul>
+              </td>
+              <td class="entry-content" style="padding:8px;width:80%;vertical-align:middle">
+                <h3 class="experience-title">Laboratory for Computational Neuroergonomics, National Tsing Hua University</h3>
+                <p class="experience-role"><strong>Undergraduate Research Assistant</strong></p>
+                <p class="experience-dates"><em>August 2023 – December 2024</em></p>
+                <p class="experience-description">My early research experience focused on analyzing brain responses to visual stimuli using electroencephalography (EEG). I designed an Arduino-controlled LED stimulation system and collected 32-channel EEG signals to investigate individual differences in Steady-State Visual Evoked Potentials (SSVEPs). Through signal processing and machine learning experiments, I compared different approaches for frequency classification, achieving 96.23% accuracy with a neural network model. This experience introduced me to experimental research and strengthened my interest in applying machine learning to real-world sensing problems.</p>
               </td>
             </tr>
           </tbody></table>
@@ -201,17 +180,17 @@
           <table class="section-heading" style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
             <tr>
               <td style="padding:20px;width:100%;vertical-align:middle">
-                <h2>Publications</h2>
+                <h2 id="publications">Publications</h2>
               </td>
             </tr>
           </tbody></table>
           <table class="section-list" style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
             <tr>
               <td class="publication-entry" style="padding:20px;width:100%;vertical-align:middle">
-                <p>
-                  Patterson Hsieh, Chia-Jui Yeh*, <strong>Mao-Chi He</strong>, Wen-Han Hsieh, Elvis Hsieh†. "Seg the HAB: Language-Guided Geospatial Algae Bloom Reasoning and Segmentation." <em>NeurIPS 2025 Workshop on Tackling Climate Change with Machine Learning</em>, 2025. [<a href="https://arxiv.org/abs/2510.18751">Paper</a>]<br>
-                  <span class="muted" style="font-size: 0.9em;">*Equal contribution &nbsp; †Co-supervising authors</span>
-                </p>
+                <h3>Seg the HAB: Language-Guided Geospatial Algae Bloom Reasoning and Segmentation</h3>
+                <p><em>NeurIPS 2025 Workshop on Tackling Climate Change with Machine Learning</em></p>
+                <p>Harmful algal blooms pose significant threats to aquatic ecosystems, making accurate monitoring essential. In this project, our team developed ALGOS, a multimodal framework that combines visual representations and language reasoning to identify harmful algal blooms and estimate their severity from satellite imagery. We also developed a GeoSAM-assisted annotation pipeline with human evaluation to generate reliable segmentation masks. Our approach achieved a class IoU of 0.6493, a global IoU of 0.5969, and reduced severity estimation MSE from 3.868 to 2.984 compared with the LLaVA-7B baseline. This work was accepted at the NeurIPS 2025 Workshop on Tackling Climate Change with Machine Learning.</p>
+                <p><strong>Paper:</strong> <a href="https://doi.org/10.48550/arXiv.2510.18751">https://doi.org/10.48550/arXiv.2510.18751</a></p>
               </td>
             </tr>
           </tbody></table>
@@ -219,7 +198,7 @@
           <table class="section-heading" style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
             <tr>
               <td style="padding:20px;width:100%;vertical-align:middle">
-                <h2>Projects</h2>
+                <h2 id="projects">Projects</h2>
               </td>
             </tr>
           </tbody></table>
@@ -227,50 +206,34 @@
             <tr>
               <td class="projects-list" style="padding:0px;width:100%;vertical-align:middle">
 
-                <div class="project-entry">
-                  <img src='images/cs188.jpg' alt="AI Agent Project">
+                <a class="project-entry project-card" href="data/BargAIn%20-%20LLM%20class%20report.pdf" target="_blank" rel="noopener" aria-label="Read the BargAIn project report (PDF, opens in a new tab)">
+                  <img src="images/CS194.png" alt="BargAIn project">
                   <div class="project-content">
-                    <div class="entry-header">
-                      <strong>AI Agent Project</strong>
-                      <em style="white-space: nowrap;">Jan 2025 - Present</em>
-                    </div>
-                    <em>Developer (Berkeley, CA)</em>
-                    <ul>
-                      <li>Designed a LangGraph + LangChain + Qdrant workflow to autonomously draft replies for medical insurance e-mails.</li>
-                      <li>Targeted a 50% reduction in insurance paperwork time, potentially saving physicians 7-10 hours per week for patient care.</li>
-                    </ul>
+                    <h3>BargAIn: Agentic AI for Healthcare Debt Negotiation</h3>
+                    <span class="project-report-link">Read project report (PDF)</span>
+                    <p class="project-subtitle"><em>UC Berkeley | CS194: Large Language Model Agents</em></p>
+                    <p class="project-description">Medical bills and insurance policies can be complicated to understand and negotiate. To address this challenge, our team developed BargAIn, an agentic AI system designed to assist users with medical bill analysis and healthcare debt negotiation. We implemented a multi-agent workflow using LangGraph, with specialized agents responsible for document analysis, insurance evaluation, legal compliance considerations, and negotiation strategies. By integrating retrieval-augmented generation (RAG) with Qdrant, the system retrieves relevant medical billing and insurance information to support its recommendations and facilitate negotiation through voice and email interactions.</p>
                   </div>
-                </div>
+                </a>
 
                 <div class="project-entry">
                   <img src='images/AI_CUP.png' alt="AI Cup Hackathon">
                   <div class="project-content">
-                    <div class="entry-header">
-                      <strong>AI Cup Hackathon</strong>
-                      <em style="white-space: nowrap;">Oct 2024 - Nov 2024</em>
-                    </div>
-                    <em>Participant (7th/487 teams) - Taiwan</em>
-                    <ul>
-                      <li>Applied OCR to extract text from images and generate embeddings for retrieval and analysis.</li>
-                      <li>Integrated ChatGPT, Gemini, Claude, and Llama APIs to improve answer quality for image-based question answering.</li>
-                    </ul>
+                    <h3>AI Cup Hackathon: Document Question Answering with LLMs</h3>
+                    <p class="project-subtitle"><em>7th Place Among 487 Teams | 2024</em></p>
+                    <p class="project-description">Our team developed an AI-powered document question-answering system designed to extract and interpret information from lengthy PDF documents. We combined optical character recognition (OCR), text retrieval, and multiple large language models, including GPT, Gemini, Claude, and Llama, to generate answers grounded in document content. To improve reliability, we designed a voting and verification mechanism that compared responses across models and incorporated previous false-positive cases through few-shot prompting. Our system achieved <strong>92.39% answer accuracy</strong>, placing 7th among 487 participating teams.</p>
                   </div>
                 </div>
 
-                <div class="project-entry">
+                <a class="project-entry project-card" href="https://youtu.be/EiodaJCLovs?si=_PkE7WFF7pv6CQrD" target="_blank" rel="noopener" aria-label="Watch the GenAI Stars project demo on YouTube (opens in a new tab)">
                   <img src='images/GenAI.png' alt="GenAI Stars Hackathon">
                   <div class="project-content">
-                    <div class="entry-header">
-                      <strong>GenAI Stars Hackathon</strong>
-                      <em style="white-space: nowrap;">May 2024 - Jul 2024</em>
-                    </div>
-                    <em>Participant (Semifinalist & Merit Award) - Taiwan</em>
-                    <ul>
-                      <li>Built a sports-analysis pipeline using YOLOv8 for player detection, KMeans for team classification, and Whisper for speech-to-text.</li>
-                      <li>Integrated video processing, speech understanding, and GPT-4-based summarization into a Flutter application.</li>
-                    </ul>
+                    <h3>GenAI Stars Hackathon: AI-Powered Sports Video Analysis</h3>
+                    <span class="project-report-link">Watch project demo on YouTube</span>
+                    <p class="project-subtitle"><em>Semifinalist &amp; Merit Award Among 836 Teams | 2024</em></p>
+                    <p class="project-description">Our team developed an AI-powered sports video analysis platform that automatically identifies important moments and generates highlight clips. We integrated YOLOv8 for player detection, K-Means for team classification, and ByteTrack for multi-object tracking. To identify meaningful moments, we incorporated Whisper for speech transcription and text embeddings for segment retrieval, along with GPT-4 for video summarization. We combined these components into a Flutter application, demonstrating how computer vision and language models can work together to automate sports video analysis.</p>
                   </div>
-                </div>
+                </a>
 
               </td>
             </tr>
@@ -281,32 +244,79 @@
     </tbody></table>
     <script>
       (function () {
-        var storageKey = 'preferred-theme';
-        var toggle = document.querySelector('.theme-toggle');
-        var root = document.documentElement;
-        var currentTheme = root.getAttribute('data-theme') || 'light';
+        var demo = document.querySelector('.vision-video video');
+        var demoMedia = document.querySelector('.vision-media');
+        var playbackPending = false;
 
-        function saveTheme(theme) {
-          try {
-            localStorage.setItem(storageKey, theme);
-          } catch (error) {
-            return;
+        function playDemo() {
+          if (document.hidden || !demo.paused || playbackPending) return;
+          demo.muted = true;
+          demo.defaultMuted = true;
+          demo.playsInline = true;
+          playbackPending = true;
+          var playback = demo.play();
+          if (playback) {
+            playback.then(function () {
+              playbackPending = false;
+              demo.controls = false;
+            }).catch(function (error) {
+              playbackPending = false;
+              if (error.name === 'AbortError') return;
+              demoMedia.classList.remove('is-playing');
+            });
+          } else {
+            playbackPending = false;
           }
         }
 
-        function applyTheme(theme) {
-          root.setAttribute('data-theme', theme);
-          toggle.setAttribute('aria-pressed', theme === 'dark');
-          toggle.setAttribute('aria-label', theme === 'dark' ? 'Switch to light mode' : 'Switch to dark mode');
+        demo.addEventListener('playing', function () {
+          demo.controls = false;
+          demoMedia.classList.add('is-playing');
+        });
+        demo.addEventListener('pause', function () {
+          demoMedia.classList.remove('is-playing');
+        });
+        demo.addEventListener('error', function () {
+          demoMedia.classList.remove('is-playing');
+        });
+        demo.addEventListener('canplay', playDemo, { once: true });
+        if ('IntersectionObserver' in window) {
+          var videoObserver = new IntersectionObserver(function (entries) {
+            entries.forEach(function (entry) {
+              if (entry.isIntersecting) playDemo();
+            });
+          }, { threshold: 0.1 });
+          videoObserver.observe(demo);
+        }
+        window.addEventListener('pageshow', playDemo);
+        document.addEventListener('visibilitychange', function () {
+          if (!document.hidden) playDemo();
+        });
+        document.addEventListener('pointerdown', playDemo, { once: true });
+        playDemo();
+
+        var photoTrack = document.querySelector('.photo-track');
+        var photoCount = photoTrack.children.length;
+
+        function selectPhoto(index) {
+          var reduceMotion = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+          var target = (index + photoCount) % photoCount;
+          photoTrack.scrollTo({ left: photoTrack.clientWidth * target, behavior: reduceMotion ? 'instant' : 'smooth' });
         }
 
-        applyTheme(currentTheme);
+        function changePhoto(direction) {
+          var active = Math.round(photoTrack.scrollLeft / photoTrack.clientWidth);
+          selectPhoto(active + direction);
+        }
 
-        toggle.addEventListener('click', function () {
-          currentTheme = root.getAttribute('data-theme') === 'dark' ? 'light' : 'dark';
-          saveTheme(currentTheme);
-          applyTheme(currentTheme);
+        document.querySelector('.photo-prev').addEventListener('click', function () { changePhoto(-1); });
+        document.querySelector('.photo-next').addEventListener('click', function () { changePhoto(1); });
+        photoTrack.addEventListener('keydown', function (event) {
+          if (event.key !== 'ArrowLeft' && event.key !== 'ArrowRight') return;
+          event.preventDefault();
+          changePhoto(event.key === 'ArrowRight' ? 1 : -1);
         });
+
       }());
     </script>
   </body>
